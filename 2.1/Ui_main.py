@@ -76,3 +76,8 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
+    
+    #!revisar implementacion del codigo para calculadora didactica.
+    #Solucion igual a segunda ventana
+    #TODO se recomienda crear un segundo archivo botones2.py para calculadora_didactica
+    
