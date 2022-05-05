@@ -245,7 +245,6 @@ class Ui_Form2(object):
         self.retranslateUi(Form)
         self.SALIR.clicked.connect(Form.close) # type: ignore
         self.BOTON_C.clicked.connect(self.Valor.clear) # type: ignore
-        self.SIGUIENTE.clicked.connect(Form.close) # type: ignore
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):

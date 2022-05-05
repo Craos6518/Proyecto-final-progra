@@ -762,21 +762,5 @@ font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
     </hint>
    </hints>
   </connection>
-  <connection>
-   <sender>SIGUIENTE</sender>
-   <signal>clicked()</signal>
-   <receiver>Form</receiver>
-   <slot>close()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>576</x>
-     <y>306</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>617</x>
-     <y>239</y>
-    </hint>
-   </hints>
-  </connection>
  </connections>
 </ui>
