@@ -56,7 +56,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>CALCULADORA DIDACTICA</string>
+     <string>GRAFICADOR SENO</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_3">
