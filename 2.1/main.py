@@ -1,6 +1,8 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
-from Botones import MiFormulario
-from UI.INFO.Info import Ui_Form3
+from UI.COMPLEMENTOS.SIMPLE.Calculadora_Principal import MiFormulario
+from UI.COMPLEMENTOS.RESISTENCIA.Resistencia_Principal import MiApp2
+from UI.COMPLEMENTOS.INFO.Info import Ui_Form3
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -23,7 +25,7 @@ class Ui_MainWindow(object):
         self.pushButton_3.setObjectName("pushButton_3")
         
         self.pushButton.clicked.connect(self.popWindow) #Añadir un evento de clic para el botón
-        #self.pushButton_2.clicked.connect(self.popWindow2) #Añadir un evento de clic para el botón
+        self.pushButton_2.clicked.connect(self.popWindow2) #Añadir un evento de clic para el botón
         self.pushButton_3.clicked.connect(self.popWindow3) #Añadir un evento de clic para el botón
         
         MainWindow.setCentralWidget(self.centralwidget)
@@ -43,7 +45,7 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.label.setText(_translate("MainWindow", "MENU"))
         self.pushButton.setText(_translate("MainWindow", "CALCULADORA SIMPLE"))
-        self.pushButton_2.setText(_translate("MainWindow", "GRAFICADORA"))
+        self.pushButton_2.setText(_translate("MainWindow", "RESISTENCIAS"))
         self.pushButton_3.setText(_translate("MainWindow", "INFO"))
 
     #Mostrar la función de la calculadora simple (consistente con el contenido en la función principal correspondiente generada automáticamente en UI_second.py)
@@ -52,12 +54,12 @@ class Ui_MainWindow(object):
         self.ui2 = MiFormulario()
         self.ui2.__init__(self.form2)
         self.form2.show()
-    '''#Mostrar la función de la GRAFICADORA (consistente con el contenido en la función principal correspondiente generada automáticamente en UI_second.py)
+    #Mostrar la función de la GRAFICADORA (consistente con el contenido en la función principal correspondiente generada automáticamente en UI_second.py)
     def popWindow2(self):
         self.form2 = QtWidgets.QWidget() 
-        self.ui2 = Ui_Form2()
-        self.ui2.setupUi2(self.form2)
-        self.form2.show()'''
+        self.ui2 = MiApp2()
+        self.ui2.__init__(self.form2)
+        self.form2.show()
 
     #Mostrar la función de la info (consistente con el contenido en la función principal correspondiente generada automáticamente en UI_second.py)
     def popWindow3(self):
@@ -75,7 +77,5 @@ if __name__ == "__main__":
     MainWindow.show()
     sys.exit(app.exec_())
     
-    #!revisar implementacion del codigo para calculadora didactica.
-    #Solucion igual a segunda ventana
-    #TODO se recomienda crear un segundo archivo botones2.py para calculadora_didactica
-    
+#No se sigue con la idea de la calculadora didactica
+#Se adopta la idea de un graficador

@@ -1,5 +1,6 @@
 import sys
-from UI.SIMPLE.CALCULADORA_ui import *
+from UI.COMPLEMENTOS.SIMPLE.CALCULADORA_ui import *
+
 class MiFormulario(QtWidgets.QWidget):
     def __init__(self,parent=None):
         QtWidgets.QWidget.__init__(self,parent)
