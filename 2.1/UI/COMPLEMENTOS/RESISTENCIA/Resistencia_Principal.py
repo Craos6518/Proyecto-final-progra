@@ -4,8 +4,8 @@ from UI.COMPLEMENTOS.RESISTENCIA.UI_RESISTENCIA import *
 class MiApp2(QtWidgets.QMainWindow):
 	def __init__(self):
 		super().__init__()
-		self.ui = Ui_Form() 
-		self.ui.setupUi(self)
+		self.ui = Ui_Form2() 
+		self.ui.setupUi2(self)
 
 		self.multiplicadorDIC = {
 		"Plata":0.01,
