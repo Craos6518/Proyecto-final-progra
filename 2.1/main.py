@@ -54,7 +54,8 @@ class Ui_MainWindow(object):
         self.ui2 = MiFormulario()
         self.ui2.__init__(self.form2)
         self.form2.show()
-    #Mostrar la función de la GRAFICADORA (consistente con el contenido en la función principal correspondiente generada automáticamente en UI_second.py)
+    
+    #Mostrar la función de la resistencia (consistente con el contenido en la función principal correspondiente generada automáticamente en UI_second.py)
     def popWindow2(self):
         self.form2 = QtWidgets.QWidget() 
         self.ui2 = MiApp2()
@@ -77,5 +78,5 @@ if __name__ == "__main__":
     MainWindow.show()
     sys.exit(app.exec_())
     
-#No se sigue con la idea de la calculadora didactica
-#Se adopta la idea de un graficador
+#se adopta la medida de contingencia de la resistencia
+#revisar ingreso al modulo resistencia
