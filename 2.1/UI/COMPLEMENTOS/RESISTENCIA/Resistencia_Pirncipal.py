@@ -1,6 +1,5 @@
 import sys
-from UI.COMPLEMENTOS.RESISTENCIA.UI_RESISTENCIA import *
-
+from GUI import *
 class MiApp2(QtWidgets.QMainWindow):
 	def __init__(self):
 		super().__init__()
@@ -241,9 +240,8 @@ class MiApp2(QtWidgets.QMainWindow):
 
 
 		
-'''if __name__ == "__main__":
+if __name__ == "__main__":
      app = QtWidgets.QApplication(sys.argv)
      mi_app = MiApp2()
      mi_app.show()
      sys.exit(app.exec_())		
-'''

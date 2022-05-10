@@ -1,6 +1,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from UI.COMPLEMENTOS.SIMPLE.Calculadora_Principal import MiFormulario
-from UI.COMPLEMENTOS.RESISTENCIA.Resistencia_Principal import MiApp2
+from UI.COMPLEMENTOS.RESISTENCIA.Resistencia_Pirncipal import MiApp2
 from UI.COMPLEMENTOS.INFO.Info import Ui_Form3
 
 class Ui_MainWindow(object):
