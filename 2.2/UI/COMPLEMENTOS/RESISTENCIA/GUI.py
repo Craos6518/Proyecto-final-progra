@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'c:\Users\andre\OneDrive - Universidad Tecnológica de Pereira\Desktop\Proyecto final progra\2.2\UI\COMPLEMENTOS\RESISTENCIA\GUI_RESISTENCIA.ui'
+# Form implementation generated from reading ui file 'GUI_RESISTENCIA.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.6
 #
@@ -148,3 +148,13 @@ class Ui_FORM(object):
         self.label_13.setText(_translate("FORM", "Ω"))
         self.label_14.setText(_translate("FORM", "Ω"))
         self.label_15.setText(_translate("FORM", "Ω"))
+
+
+'''if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    FORM = QtWidgets.QWidget()
+    ui = Ui_FORM()
+    ui.setupUi(FORM)
+    FORM.show()
+    sys.exit(app.exec_())'''
